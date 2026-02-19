@@ -23,5 +23,19 @@
     <% }else{ %>
         <h3>You are a youngin'</h3>
     <% } %>
+
+    <h4>Hobbies:</h4>
+    <ul>
+    <% user.hobbies.forEach(hobby => { %>  
+        <li><%= hobby %></li>
+    <% }); %>
+    </ul>
+
+    <h4>Courses:</h4>
+    <ol>
+    <% user.courses.forEach(course => { %>
+        <li><%= course %></li>
+    <% }); %>
+    </ol>
 </body>
 </html>

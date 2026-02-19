@@ -11,11 +11,10 @@ app.get('/', (req,res) => {
         name: "Hosea",
         color: "Red",
         food: "Pizza",
-        // grade: 3.7,
         grade: 0.43,
-        age: 21
-        // age: 13
-        
+        age: 21,
+        hobbies: ['Music production', 'Photography', 'Video games'],
+        courses: ['SDEV 301', 'SDEV 305', 'ENGL 335']
     }
     res.render('home', {user});
 });
